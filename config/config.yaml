@@ -7,3 +7,9 @@ data_ingestion:
   source_URL: https://drive.google.com/file/d/1J5yEH4PMqHKBt2d4rVCK_tc1NyP8hREe/view?usp=sharing # URL to download the dataset
   local_data_file: artifacts/data_ingestion/data.zip # Local path to save the downloaded dataset
   unzip_dir: artifacts/data_ingestion # Directory to unzip the dataset
+
+# Configuration for preparing the base model
+prepare_base_model:
+  root_dir: artifacts/prepare_base_model # Directory to store base model preparation artifacts
+  base_model_path: artifacts/prepare_base_model/base_model.h5 # Path to save the initial base model
+  updated_base_model_path: artifacts/prepare_base_model/base_model_updated.h5 # Path to save the updated base model

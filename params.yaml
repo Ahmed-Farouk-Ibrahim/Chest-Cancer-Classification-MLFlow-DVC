@@ -1,1 +1,9 @@
-key: val
+# Configuration for data augmentation and model parameters
+AUGMENTATION: True # Enable data augmentation
+IMAGE_SIZE: [224, 224, 3] # Image size as per ResNet50 model requirements (height, width, channels)
+BATCH_SIZE: 16 # Number of samples per gradient update
+INCLUDE_TOP: False # Exclude the top fully connected layers from the pre-trained model
+EPOCHS: 10 # Number of epochs to train the model
+CLASSES: 4 # Number of output classes
+WEIGHTS: imagenet # Pre-trained weights on ImageNet dataset
+LEARNING_RATE: 0.01 # Learning rate for the optimizer

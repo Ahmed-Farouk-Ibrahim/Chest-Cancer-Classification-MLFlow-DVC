@@ -4,7 +4,7 @@ from src.cnnClassifier.logging import logger
 
 
 
-STAGE_NAME = "Data Ingestion stage"
+STAGE_NAME = "Data Ingestion"
 
 class DataIngestionTrainingPipeline:
     def __init__(self):
@@ -29,10 +29,10 @@ class DataIngestionTrainingPipeline:
 
 if __name__ == '__main__':
     try:
-        logger.info(f">>>>>> {STAGE_NAME} has started <<<<<<")
+        logger.info(f">>>>>> {STAGE_NAME} stage has started <<<<<<")
         obj = DataIngestionTrainingPipeline()
         obj.main()
-        logger.info(f">>>>>> {STAGE_NAME} has completed <<<<<<\n\nx==========x")
+        logger.info(f">>>>>> {STAGE_NAME} stage has completed <<<<<<\n\nx==========x")
     except Exception as e:
         # Log the exception details and raise it
         logger.exception(e)

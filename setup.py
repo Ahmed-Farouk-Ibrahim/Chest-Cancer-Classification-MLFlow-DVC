@@ -8,7 +8,7 @@ with open("README.md", "r", encoding="utf-8") as f:
 __version__ = "0.0.0"
 REPO_NAME = "Chest-Cancer-Classification-Project"
 AUTHOR_USER_NAME = "Ahmed Osman"
-SRC_REPO = "src" # It will be the main local package 
+SRC_REPO = "cnnClassifier" # It will be the main local package 
 AUTHOR_EMAIL = "engineer.ahmedfarouk@gmail.com"
 
 
@@ -25,7 +25,7 @@ setup(
     project_urls={
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
-    #package_dir={"": "src"},
-    packages=find_packages(),
+    package_dir={"": "src"},
+    packages=find_packages(where="src"),
     install_requires=[],
 )
